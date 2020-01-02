@@ -1,0 +1,38 @@
+env:
+  browser: true
+  es6: true
+extends:
+  - airbnb-base
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+parser: babel-eslint
+rules:
+  {
+    "prefer-promise-reject-errors": ["off"],
+    "no-console": "off",
+    "no-tabs": 0,
+    "comma-dangle": ["error", "never"],
+    "arrow-parens": [2, "always"],
+    "arrow-body-style": ["error", "as-needed"],
+    "linebreak-style": 0,
+    "max-classes-per-file": ["off"],
+    "no-useless-catch": ["off"],
+    "for-direction": ["off"],
+    "getter-return": ["off"],
+    "no-async-promise-executor": ["off"],
+    "no-compare-neg-zero": ["off"],
+    "no-misleading-character-class": ["off"],
+    "no-buffer-constructor": ["off"],
+    "lines-between-class-members": ["off"],
+    "prefer-object-spread": ["off"],
+    "react/jsx-fragments": ["off"],
+    "jsx-a11y/click-events-have-key-events": ["off"],
+    "jsx-a11y/no-noninteractive-element-interactions": ["off"],
+    "template-curly-spacing": "off",
+    "indent": "off",
+    "react/jsx-one-expression-per-line": "off",
+  }
