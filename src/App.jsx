@@ -21,7 +21,7 @@ class App extends React.Component {
   createShapes = () => {
     const shapes = createGeometry();
     const start = init(shapes, { z: 20 });
-    const viewer = document.getElementById('viewer');
+    const { viewer } = this.refs;
     viewer.appendChild(start.renderer.domElement);
     const { renderer, scene, camera } = start;
     this.setState({
